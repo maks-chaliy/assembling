@@ -3,6 +3,7 @@
 	overflow: hidden;
 }
 
+//=============/=============/=============
 .burger {
 	position: relative;
 	display: none;
@@ -48,18 +49,5 @@
 				opacity: 0;
 			}
 		}
-	}
-}
-
-// => удалить этот миксин, он есть в глобальных настройках
-@mixin md-min {
-	@media (max-width: (1024px)) {
-		@content;
-	}
-}
-
-@include md-min {
-	.burger {
-		display: block;
 	}
 }

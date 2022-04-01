@@ -1,4 +1,4 @@
-/*=============== ACCORDION ===============*/
+//=============/=============/=============
 .accordion {
 	width: 300px;
 
@@ -43,17 +43,15 @@
 		padding: 10px 20px;
 	}
 
-
-
-
-}
-
-.accordion-open {
-	& .accordion__title::before {
-		transform: rotate(30deg);
-	}
-
-	& .accordion__title::after {
-		transform: rotate(-30deg);
+	.accordion-open {
+		& .accordion__title::before {
+			transform: rotate(30deg);
+		}
+	
+		& .accordion__title::after {
+			transform: rotate(-30deg);
+		}
 	}
 }
+
+
