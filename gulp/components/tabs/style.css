@@ -3,17 +3,6 @@
   height: 500px;
 }
 
-.tabs__container {
-  display: none;
-  background-color: #fff;
-  height: 450px;
-  overflow: auto;
-}
-
-.tabs__container--active {
-  display: block;
-}
-
 .tabs__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,6 +25,20 @@
   background-color: #fff;
   color: #326868;
   pointer-events: none;
+}
+
+.tabs__container {
+  background-color: #fff;
+  height: 450px;
+  overflow: auto;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content--active {
+  display: block;
 }
 
 .tabs__arrow {
@@ -65,10 +68,5 @@
 
 .tabs__arrow--next {
   right: -104px;
-}
-
-.tab-content {
-  padding: 40px 60px;
-  width: 600px;
 }
 /*# sourceMappingURL=style.css.map */
