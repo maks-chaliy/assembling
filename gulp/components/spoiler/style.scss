@@ -1,0 +1,25 @@
+.spoiler {
+	display: flex;
+	
+	&__item {
+		position: relative;
+	}
+
+	&__drop {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		z-index: 1;
+		white-space: nowrap;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.3s;
+	}
+
+	&--open {
+		.spoiler__drop {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

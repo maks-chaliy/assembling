@@ -47,12 +47,12 @@
   padding: 10px 20px;
 }
 
-.accordion .accordion-open .accordion__title::before {
+.accordion-open .accordion__title::before {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
 
-.accordion .accordion-open .accordion__title::after {
+.accordion-open .accordion__title::after {
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }

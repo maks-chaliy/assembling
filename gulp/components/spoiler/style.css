@@ -1,0 +1,27 @@
+.spoiler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spoiler__item {
+  position: relative;
+}
+
+.spoiler__drop {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.spoiler--open .spoiler__drop {
+  opacity: 1;
+  visibility: visible;
+}
+/*# sourceMappingURL=style.css.map */
