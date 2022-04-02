@@ -6,8 +6,8 @@ const $burger = document.querySelector('.burger'),
 
 $burger.addEventListener('click', () => {
 
-	$burger.classList.toggle('burger--active');// из иконки меню сделать крестик
-	$nav.classList.toggle('nav--active');// появление меню
+	$burger.classList.toggle('burger--open');// из иконки меню сделать крестик
+	$nav.classList.toggle('nav--open');// появление меню
 	$body.classList.toggle('stop-scroll');// скрыть прокрутку сайта в меню
 });
 
@@ -16,8 +16,8 @@ $burger.addEventListener('click', () => {
 //удаляем все ранее присвоенные классы для открытия меню
 $navItems.forEach(el => {
 	el.addEventListener('click', () => {
-		$burger.classList.remove('burger--active');
-		$nav.classList.remove('nav--active');
+		$burger.classList.remove('burger--open');
+		$nav.classList.remove('nav--open');
 		$body.classList.remove('stop-scroll');
 	})
 });

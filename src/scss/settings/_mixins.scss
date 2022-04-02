@@ -57,37 +57,31 @@
 	justify-content: center;
 }
 
-@mixin lg-max {
-	@media (max-width: (1640px)) {
-		@content;
-	}
-}
-
-@mixin lg {
+@mixin xl-max{
 	@media (max-width: (1440px)) {
 		@content;
 	}
 }
 
-@mixin md {
+@mixin xl {
 	@media (max-width: (1200px)) {
 		@content;
 	}
 }
 
-@mixin md-min {
+@mixin lg {
 	@media (max-width: (1024px)) {
 		@content;
 	}
 }
 
-@mixin mobile {
+@mixin md {
 	@media (max-width: (768px)) {
 		@content;
 	}
 }
 
-@mixin mobile-min {
+@mixin sm {
 	@media (max-width: (576px)) {
 		@content;
 	}
