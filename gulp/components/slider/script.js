@@ -4,8 +4,8 @@ console.log(`slider`);
 
 // let slider = new Swiper($slider, {
 
-	// slideClass: 'slider__slide',
-	// wrapperClass: 'slider__wrapper',
+// slideClass: 'slider__slide',
+// wrapperClass: 'slider__wrapper',
 
 //=============/=============/=============/=============/=============
 //бесконечный цикл прокрутки по кругу
@@ -20,6 +20,16 @@ console.log(`slider`);
 //=============/=============/=============/=============/=============
 //чтобы слайдер не перелистывал а на месте один менял другой
 //effect: 'fade',
+
+//эффект крутящегосЯ куба
+//effect: 'cube',
+
+//эффект крайние слайды под углом
+// effect: 'coverflow',
+// coverflowEffect: {
+// 	rotate: 30,
+// 	slideShadows: false,
+// }
 
 //=============/=============/=============/=============/=============
 //количество слайдов в одном блоке
@@ -111,66 +121,66 @@ console.log(`slider`);
 
 // $sliders.forEach((el) => {
 // 	let sliders = new Swiper(el, {
-	// slideClass: 'slider__slide',
-	// wrapperClass: 'slider__wrapper',
+// slideClass: 'slider__slide',
+// wrapperClass: 'slider__wrapper',
 
-		//стрелочки управления
-		//названия классов идет через селектор классов
-		// navigation: {
-		// 	//названия классов кнопок
-		// 	nextEl: el.querySelector('.slider__btn-next'),
-		// 	prevEl: el.querySelector('.slider__btn-prev'),
-		// },
+//стрелочки управления
+//названия классов идет через селектор классов
+// navigation: {
+// 	//названия классов кнопок
+// 	nextEl: el.querySelector('.slider__btn-next'),
+// 	prevEl: el.querySelector('.slider__btn-prev'),
+// },
 
-		//точки управления
-		//названия классов идет через селектор классов
-		// pagination: {
-		// 	el: el.querySelector('.swiper-pagination'),
-		// 	type: 'bullets',
-		//если нужны цифры нужен другой тип пагинации
-		// type: 'fraction',
-		// 	//чтобы точки были кликабельны
-		// 	clickable: true,
-		// },
+//точки управления
+//названия классов идет через селектор классов
+// pagination: {
+// 	el: el.querySelector('.swiper-pagination'),
+// 	type: 'bullets',
+//если нужны цифры нужен другой тип пагинации
+// type: 'fraction',
+// 	//чтобы точки были кликабельны
+// 	clickable: true,
+// },
 // 	})
 // })
 
 
-	//=============/=============/=============/=============/=============
-	//переключение блоков карточек на десктопе на слайдер в мобильной версии
+//=============/=============/=============/=============/=============
+//переключение блоков карточек на десктопе на слайдер в мобильной версии
 
-	// const $slider = document.querySelector('.slider');
+// const $slider = document.querySelector('.slider');
 
-	// let mySlider;
+// let mySlider;
 
-	// function mobileSlider (){
+// function mobileSlider (){
 
-	// 	if(window.innerWidth <= 600 && $slider.dataset.mobile == "false"){
-	// 		mySlider = new Swiper ($slider,{
-	// 			slideClass: 'slider__slide',
-	// 			wrapperClass: 'slider__wrapper',
-	// 			//идет перечисление свойств как в обычном слайдере
-	// 		});
+// 	if(window.innerWidth <= 600 && $slider.dataset.mobile == "false"){
+// 		mySlider = new Swiper ($slider,{
+// 			slideClass: 'slider__slide',
+// 			wrapperClass: 'slider__wrapper',
+// 			//идет перечисление свойств как в обычном слайдере
+// 		});
 
-	// 		$slider.dataset.mobile == "true"
-	// 	}
+// 		$slider.dataset.mobile == "true"
+// 	}
 
-	// 	if(window.innerWidth > 600){
-	// 		$slider.dataset.mobile == "false";
+// 	if(window.innerWidth > 600){
+// 		$slider.dataset.mobile == "false";
 
-	// 		if($slider.classList.contains('swiper-container-intialized')){
-	// 			mySlider.destroy();
-	// 		}
-	// 	}
-	// };
+// 		if($slider.classList.contains('swiper-container-intialized')){
+// 			mySlider.destroy();
+// 		}
+// 	}
+// };
 
-	// mobileSlider();
+// mobileSlider();
 
-	// window.addEventListener('resize', ()=>{
-	// 	mobileSlider();
-	// })
+// window.addEventListener('resize', ()=>{
+// 	mobileSlider();
+// })
 
 
-	//=============/=============/=============/=============/=============
+//=============/=============/=============/=============/=============
 
 // });
