@@ -1,0 +1,173 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+//=============/=============/=============
+//управление слайдером
+//эти стили нужны чтобы заработал слайдер со своими классами
+.slider {
+	overflow: hidden;
+	width: 100%;
+
+	&__wrapper {
+		display: flex;	
+		width: 100%;
+		height: 100%;
+	}
+
+	&__slide {
+		flex-shrink: 0;
+	}
+}
+*/
+/*
+//=============/=============/=============/
+//управление стилями точек
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+
+	&-active {
+		background-color: green;
+	}
+}
+*/
+/*
+//=============/=============/=============/
+//управление стилями цифр
+.swiper-pagination-current {
+	font-size: 22px;
+	margin-top: 20px;
+}
+
+.swiper-pagination-total {
+	font-size: 16px;
+	margin-left: 20px;
+}
+*/
+/*
+//=============/=============/=============/
+//чтобы картинки слайда были размером в зависимости от контена
+.slider__slide {
+	width: auto;
+}
+*/
+/*
+//=============/=============/=============/
+//на экране 3 картинки слайдера, центральная при переключении
+//увеличивается а боковые темнееют
+.card {
+	padding: 30px;
+	background-color: aquamarine;
+	min-height: 300px;
+}
+
+.slider {
+		padding: 100px 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+		border-radius: 8px;
+		position: relative;
+}
+
+.slider__slide {
+	transition: 0.5s;
+	opacity: 0.5;
+}
+
+.slider__slide-active {
+	transform: scale(1.2);
+	transition: 0.5s;
+	opacity: 1;
+}
+*/
+/*
+//=============/=============/=============/
+//на экране много картинок слайдера на всю ширину экрана, 3 центральные видно
+//остальные со свойством opasity
+//чтобы они растянулись на всю ширину экран у slider убираем 
+//свойство 		overflow: hidden; или присваиваеи обратное 		overflow: initial;
+.slider__slide {
+	transition: 0.5s;
+	opacity: 0.5;
+}
+.slider__slide-active,
+.slider__slide-prev,
+.slider__slide-next {
+	transition: 0.5s;
+	opacity: 1;
+}
+*/
+/*
+//=============/=============/=============/
+	//переключение блоков карточек на десктопе на слайдер в мобильной версии
+
+	.slider {
+		overflow: hidden;
+		width: 100%;
+
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+
+		&__slide {
+			width: 22%;
+			flex-shrink: 0;
+			margin-bottom: 2%;
+			margin-right: 2%;
+
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	@media (max-width: 576px){
+		.slider {
+			&__wrapper {
+				flex-wrap: nowrap;
+			}
+
+			&__slide {
+				width: 100%;
+				margin: 0;
+			}
+		}
+	}
+	*/
+/*# sourceMappingURL=style.css.map */
