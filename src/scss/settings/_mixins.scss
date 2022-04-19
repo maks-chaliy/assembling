@@ -1,5 +1,4 @@
 
-
 @mixin bg-cover {
   background-position: center;
   background-size: cover;
@@ -10,12 +9,12 @@
   display: flex;
 }
 
-@mixin flex-v-center {
+@mixin flex-h-center {
   display: flex;
   align-items: center;
 }
 
-@mixin flex-h-center {
+@mixin flex-v-center {
   display: flex;
   justify-content: center;
 }
@@ -32,10 +31,21 @@
   justify-content: space-between;
 }
 
+@mixin flex-start-sb {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
 @mixin flex-end-sb {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
 }
 
 @mixin flex-column-start {
@@ -50,6 +60,13 @@
 	align-items: center;
 }
 
+@mixin flex-column-center-sb {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
 @mixin flex-column-all-center {
 	display: flex;
 	flex-direction: column;
@@ -57,32 +74,38 @@
 	justify-content: center;
 }
 
-@mixin xl-max{
+@mixin laptop-max{
 	@media (max-width: (1440px)) {
 		@content;
 	}
 }
 
-@mixin xl {
+@mixin laptop {
 	@media (max-width: (1200px)) {
 		@content;
 	}
 }
 
-@mixin lg {
+@mixin tablet-max {
 	@media (max-width: (1024px)) {
 		@content;
 	}
 }
 
-@mixin md {
+@mixin tablet {
 	@media (max-width: (768px)) {
 		@content;
 	}
 }
 
-@mixin sm {
+@mixin mobile {
 	@media (max-width: (576px)) {
+		@content;
+	}
+}
+
+@mixin mobile-min {
+	@media (max-width: (425px)) {
 		@content;
 	}
 }

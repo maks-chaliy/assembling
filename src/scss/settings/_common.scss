@@ -54,6 +54,21 @@
   }
 }
 
+.section {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	@include tablet {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	@include mobile {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
 //- стили для scrollbar
 //- по умолчанию для всего сайта
 //- для определенного блока нужно подставить класс этого блока
