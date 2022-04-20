@@ -1,0 +1,123 @@
+//=============/=============/=============
+//сброс стилей
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.btn-reset {
+	border: none;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin tablet-max {
+	@media (max-width: (1024px)) {
+		@content;
+	}
+}
+
+
+//=============/=============/=============
+.nav {
+	position: relative;
+	left: -100%;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #aaa;
+	transition: left 0.5s linear;
+
+	&__list {
+		padding-top: 100px;
+	}
+}
+
+.nav--active {
+		left: 0;
+	}
+
+
+//=============/=============/=============
+//класс для удаления скролла при открытом меню
+.stop-scroll {
+	overflow: hidden;
+}
+
+.burger {
+	position: fixed;
+	z-index: 110;
+	right: 60px;
+	top: 60px;
+	z-index: 110;
+	width: 44px;
+	height: 44px;
+	border: 1px solid #000;
+	background-color: #fff;
+	border-radius: 8px;
+	cursor: pointer;
+	display: none;
+
+	@include tablet-max {
+		display: block;
+	}
+
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 24px;
+		height: 2px;
+		background-color: black;
+		transform: translateY(-8px) translateX(-50%);
+		transition: transform 0.3s linear;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 24px;
+		height: 2px;
+		background-color: black;
+		transform: translateY(8px) translateX(-50%);
+		transition: transform 0.3s linear;
+	}
+
+	&__line {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%);
+		width: 24px;
+		height: 2px;
+		background-color: black;
+		transition: all 0.3s linear;
+		transition: opacity 0.3s linear;
+	}
+}
+
+.burger--active {
+	.burger__line {
+		opacity: 0;
+	}
+}
+
+.burger--active::before {
+	transform: translateY(0px) translateX(-50%) rotate(45deg);
+}
+
+.burger--active::after {
+	transform: translateY(0px) translateX(-50%) rotate(-45deg);
+}
