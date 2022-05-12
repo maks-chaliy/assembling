@@ -1,6 +1,11 @@
 //=============/=============/=============
-// .footer {
-// 	margin-top: auto;
-// 	height: 100px;
-// 	background-color: var(--color-grey);
-// }
+.footer {
+	margin-top: auto;
+	height: 10px;
+
+	&__inner {
+		margin-top: var(--offset-maximum);
+		height: 100%;
+		background-color: var(--pumpkin-color);
+	}
+}

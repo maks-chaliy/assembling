@@ -1,3 +1,10 @@
+//=============/=============/=============
+/*
+burger: z-index: 110;
+header:
+*/
+
+//=============/=============/=============
 
 .site-container {
 	min-height: 100vh;
@@ -66,6 +73,14 @@
 	@include mobile {
 		margin-top: var(--indent-large);
 		margin-bottom: var(--indent-large);
+	}
+}
+
+.section-vertical-offset {
+	padding-top: var(--offset-maximum);
+
+	@include tablet {
+		padding-top: var(--offset-huge);
 	}
 }
 

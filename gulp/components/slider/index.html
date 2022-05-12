@@ -11,98 +11,82 @@
 
 <body>
 
-	<!-- plugins ------------ 
-			---------------q-slider -->
+	<!--* plugins --------------------------- q-slider -->
 
 
-	<!--подключение swiper slider  -->
-	<!-- link подключать до основного стиля css -->
-	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+	<!--?подключение swiper slider  -->
+	<!--? link подключать до основного стиля css -->
+	<!--* <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 
 
-	<!-- script подключать до основного скрипта проекта -->
-	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+	<!--? script подключать до основного скрипта проекта -->
+	<!--* <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
 
-		<!-- plugins ------------ 
-		---------------q-slider-js -->
-	<!-- 
-	-слайдер сделан со своими классами , поэтому после вызова Swiper
-	-нужно привязать свои классы к классам Swiper
-	-или вызвать плагин в файле js  q-slider-js
-	-->
-	<!-- slideClass: 'slider__slide', -->
-	<!-- wrapperClass: 'slider__wrapper', -->
+	<!--? plugins --------------------------- q-slider-js -->
+	<!--? -слайдер сделан со своими классами , поэтому после вызова Swiper-->
+	<!--?	-нужно привязать свои классы к классам Swipe или вызвать плагин в файле js  q-slider-js	-->
+	<!--* slideClass: 'slider__slide', -->
+	<!--* wrapperClass: 'slider__wrapper', -->
 
 
-	<!-- plugins ------------ 
-		---------------q-slider-scss -->
-	<!-- 
-	-чтобы слайдер заработал ему нужно применить стили по умолчанию
-	-смотри в scss или вызови плагин q-slider-scss
-	-->
+	<!--? plugins --------------------------- q-slider-scss -->
+	<!--? чтобы слайдер заработал ему нужно применить стили по умолчанию -->
+	<!--? смотри в scss или вызови плагин q-slider-scss -->
 
 
-	<!-- 
-		-чтобы сделать возможно переключения карточек товара на десктопной версии на слайдер в мобильной версии
-		-в родительский класс <div class="slider"> лобавить дата атрибут data-mobile="false"
-		-скрипт будет работать немного по другому с проверками условий на разрешение экрана
-	-->
-	<!-- <div class="slider" data-mobile="false"> -->
+	<!--? чтобы сделать возможно переключения карточек товара из десктопной версии на слайдер в мобильной версии -->
+	<!--? в родительский класс <div class="slider"> лобавить дата атрибут data-mobile="false" -->
+	<!--? скрипт будет работать немного по другому с проверками условий на разрешение экрана -->
+	<!--* <div class="slider" data-mobile="false"> -->
 
 
-	<!-- 
-	-если добавить класс "swiper-no-swiping" рядом с основным классом class="slider
-	-то отключится перетягивание слайдера курсором мыши
-	-->
+	<!--? если добавить класс "swiper-no-swiping" рядом с основным классом class="slider -->
+	<!--? то отключится перетягивание слайдера курсором мыши -->
 
 
-	<!-- 
-	-стрелки  и точки управления слайдером стявятся
-	-между <div class="slider"> и <div class="slider__wrapper">
-	-->
-	<!-- <button class="btn-reset slider__btn slider__btn-next"></button> -->
-	<!-- <button class="btn-reset slider__btn slider__btn-prev"></button> -->
+	<!--? стрелки  и точки управления слайдером стявятся -->
+	<!--? между <div class="slider"> и <div class="slider__wrapper"> -->
+	<!--* <button class="btn-reset slider__btn slider__btn-next"></button> -->
+	<!--* <button class="btn-reset slider__btn slider__btn-prev"></button> -->
 
 
-	<!-- 
-	-стрелки можно вынести за пределы контейнера слайдера
-	-перед контейнером слайдера нужно создать контейнер для стрелок
-	-в css стрелка присвоить свойство slider-btn{position: static};
-	-и далее позиционировать как нужно
-	-->
-	<!-- <h1>Slider</h1>
-	<div class="slider__buttons">
-		<button class="btn-reset slider__btn slider__btn-next"></button>
-		<button class="btn-reset slider__btn slider__btn-prev"></button>
-	</div> -->
+
+	<!--? стрелки можно вынести за пределы контейнера слайдера -->
+	<!--? перед контейнером слайдера нужно создать контейнер для стрелок -->
+	<!--? в css стрелка присвоить свойство slider-btn{position: static}; -->
+	<!--? и далее позиционировать как нужно -->
+	<!--* <h1>Slider</h1> -->
+	<!--* <div class="slider__buttons"> -->
+	<!--* <button class="btn-reset slider__btn slider__btn-next"></button> -->
+	<!--* <button class="btn-reset slider__btn slider__btn-prev"></button> -->
+	<!--* </div> -->
 
 
-	<!-- 
-	-точки тоже можно вынести за пределы слайдера
-	-родителю нужно присвоить свойство slider{padding-bottom: 50px;}
-	-чтобы опустить место под слайдером, иначе их перекроет overflow: hidden; у родителя
-	-для создания точек нужно <div class="swiper-pagination"></div>
-  -->
+	
+	<!--? -точки тоже можно вынести за пределы слайдера -->
+	<!--? -родителю нужно присвоить свойство slider{padding-bottom: 50px;} -->
+	<!--? -чтобы опустить место под слайдером, иначе их перекроет overflow: hidden; у родителя -->
+	<!--? -для создания точек нужно <div class="swiper-pagination"></div> -->
 
 
-	<!-- 
-		-если будет много фотографий в слайдере и при этом сайт долго не грузился
-		-нужно использовать lazy-load
-		-путь до фотографии прописываем data-src="@img/intro_slider_01.jpg"
-		-сам src тоже нужно указать src="#"
-		-и в img добавть class="swiper-lazy"
-		-ниже обязательно вставить div с двумя классами
-		-в script прописать ключ lazy
-	-->
-	<!-- <img data-src="@img/intro_slider_01.jpg" src="#" alt="photo" class="swiper-lazy"> -->
-	<!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
+	
+		<!--? -если будет много фотографий в слайдере и при этом сайт долго не грузился -->
+		<!--? -нужно использовать lazy-load -->
+		<!--? -путь до фотографии прописываем data-src="@img/intro_slider_01.jpg" -->
+		<!--? -сам src тоже нужно указать src="#" -->
+		<!--? -и в img добавть class="swiper-lazy" -->
+		<!--? -ниже обязательно вставить div с двумя классами -->
+		<!--? -в script прописать ключ lazy -->
+	
+	<!--* <img data-src="@img/intro_slider_01.jpg" src="#" alt="photo" class="swiper-lazy"> -->
+	<!--* <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
 
 
 
 
 	<div class="slider" data-mobile="false">
-		<!-- здесь должны быть кнопки управления слайдером -->
+		<!--? здесь должны быть кнопки управления слайдером -->
 		<div class="slider__wrapper">
 			<div class="slider__slide"></div>
 			<div class="slider__slide"></div>
@@ -111,11 +95,11 @@
 	</div>
 
 
-	<!-- 
-	-для трех картинок слайдера
-	-по центру при переключении картинка увеличивается
-	-а боковые принимаютс свойство opacity
-	-->
+	
+	<!--? -для трех картинок слайдера -->
+	<!--? -по центру при переключении картинка увеличивается -->
+	<!--? -а боковые принимаютс свойство opacity -->
+	
 
 
 	<!-- <div class="slider">
@@ -166,8 +150,8 @@
 				</div>
 			</div> -->
 
-			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-			<script src="script.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
 
 
 </body>

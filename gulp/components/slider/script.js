@@ -127,7 +127,7 @@ console.log(`slider`);
 //стрелочки управления
 //названия классов идет через селектор классов
 // navigation: {
-// 	//названия классов кнопок
+//названия классов кнопок
 // 	nextEl: el.querySelector('.slider__btn-next'),
 // 	prevEl: el.querySelector('.slider__btn-prev'),
 // },
@@ -139,7 +139,7 @@ console.log(`slider`);
 // 	type: 'bullets',
 //если нужны цифры нужен другой тип пагинации
 // type: 'fraction',
-// 	//чтобы точки были кликабельны
+//чтобы точки были кликабельны
 // 	clickable: true,
 // },
 // 	})
