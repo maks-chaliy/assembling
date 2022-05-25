@@ -80,16 +80,3 @@ if (document.querySelector('.slider-main')) {
 		// },
 	});
 }
-
-
-
-
-const $toggle = document.querySelector('.toggle');
-const $header = document.querySelector('.header');
-const $navItem = document.querySelector('.nav__item');
-
-$toggle.addEventListener('click', () => {
-	$toggle.classList.toggle('toggle--active');
-	$header.classList.toggle('header--active');
-	$navItem.classList.toggle('nav__item--active')
-});

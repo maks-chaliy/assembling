@@ -74,6 +74,12 @@
 	justify-content: center;
 }
 
+@mixin large-screen{
+	@media (max-width: (1640px)) {
+		@content;
+	}
+}
+
 @mixin laptop-max{
 	@media (max-width: (1440px)) {
 		@content;

@@ -1,4 +1,5 @@
-
+//=============/=============/=============
+//========== SETTINGS ==========
 @import 'settings/fonts';
 @import 'settings/vars';
 @import 'settings/mixins';
@@ -14,9 +15,15 @@ body {
 }
 
 
-
-//-----components-----
+//=============/=============/=============
+//========== COMPONENTS ==========
 @import 'components/header';
-// @import 'components/burger';
 
 @import 'components/footer';
+
+
+//=============/=============/=============
+//========== FILES ==========
+// @import 'files/burger';
+// @import 'files/modals';
+// @import 'files/slider';

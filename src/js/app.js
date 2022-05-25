@@ -1,8 +1,17 @@
-
-
+//=============/=============/=============/=============/=============
+//========== SETTINGS ==========
 import * as flsFunctions from "./settings/webp.js";
 flsFunctions.isWebp();
 
-//=============/подключение модулей js/=============
-//import '../js/modules/anchors.js';
-// import '../js/modules/burger.js';
+
+//=============/=============/=============/=============/=============
+//========== MODULES ==========
+
+
+
+//=============/=============/=============/=============/=============
+//========== FILES ==========
+//import '../js/files/anchors.js';
+// import '../js/files/burger.js';
+// import '../js/files/modals.js';
+// import '../js/files/slider.js';
