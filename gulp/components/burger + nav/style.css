@@ -22,7 +22,7 @@
   position: relative;
   left: -100%;
   top: 0;
-  width: 100%;
+  width: 70%;
   height: 100vh;
   background-color: #aaa;
   -webkit-transition: left 0.5s linear;

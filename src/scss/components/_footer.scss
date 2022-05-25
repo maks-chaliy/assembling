@@ -1,10 +1,12 @@
 //=============/=============/=============
 .footer {
 	margin-top: auto;
-	height: 10px;
+	height: 20px;
 
 	&__inner {
-		margin-top: var(--offset-maximum);
+		//отступ для якорей, чтобы header не перекрывал контент
+		// margin-top: var(--offset-maximum);
+		text-align: center;
 		height: 100%;
 		background-color: var(--pumpkin-color);
 	}

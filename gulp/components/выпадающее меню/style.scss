@@ -1,6 +1,15 @@
 .menu {
 	display: inline-flex;
 	flex-direction: column;
+	// opacity: 0;
+	// height: 0;
+	// visibility: hidden;
+
+	&--active {
+		opacity: 1;
+		visibility: visible;
+		height: auto;
+	}
 
 	&__item {
 		position: relative;
@@ -18,6 +27,7 @@
 			border-top: 8px solid #000;
 			border-left: 8px solid transparent;
 			border-right: 8px solid transparent;
+			transition: transform 0.4s linear;
 		}
 
 		&--active {
@@ -29,18 +39,21 @@
 			}
 		}
 	}
+
+
 }
 
 .dropdown {
-	position: absolute;
-	left: 0;
-	top: 100%;
+	// position: absolute;
+	// right: -100px;
+	// top: 100%;
 	z-index: 1;
 	background-color: #999;
 	white-space: nowrap;
 	opacity: 0;
+	height: 0;
 	visibility: hidden;
-	transition: opacity 0.3s, visibility 0.3s linear;
+	transition: all 0.4s linear;
 
 	&__link {
 		display: block;
@@ -52,5 +65,11 @@
 	&--active {
 		opacity: 1;
 		visibility: visible;
+		height: auto;
 	}
+}
+
+
+.title {
+	cursor: pointer;
 }

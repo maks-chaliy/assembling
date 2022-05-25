@@ -1,3 +1,14 @@
+// const $title = document.querySelector('.title');
+// const $menu = document.querySelector('.menu');
+
+// // console.log($title);
+
+// $title.addEventListener('.click', () => {
+// 	console.log(12)
+// })
+
+
+
 
 
 const $menuBtn = document.querySelectorAll('.menu__btn'),

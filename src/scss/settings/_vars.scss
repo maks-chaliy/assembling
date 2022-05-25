@@ -1,18 +1,26 @@
 :root {
 	//=============/=============/=============
-  // base
+	// base
+	//отступ максимальный
 	--offset-maximum: 100px;
+	//отступ огромный
 	--offset-huge: 60px;
+	//отступ большой
 	--offset-large: 40px;
+	//отступ средний
 	--offset-middle: 30px;
-	--offset-small-back: -20px;
+	//отступ маленький
 	--offset-small: 20px;
+	//отступ маленький в обратную сторону
+	--offset-small-back: -20px;
+	//отступ минимальный в обратную сторону
+	--offset-minimum: 10px;
 	--offset-minimum-back: -10px;
-	--offset-minimum:10px;
+	//отступ минимальный
 
 	//=============/=============/=============
-  // colors
-  --white-color: #fff;
+	// colors
+	--white-color: #fff;
 	--black-color: #000;
 	--westSide-color: #ff9218;
 	--blue-color: #1f9cff;
