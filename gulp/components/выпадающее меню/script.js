@@ -1,11 +1,12 @@
-// const $title = document.querySelector('.title');
-// const $menu = document.querySelector('.menu');
+const $catalog = document.querySelector('.catalog');
+const $menu = document.querySelector('.menu');
 
-// // console.log($title);
+$catalog.addEventListener('click', () => {
 
-// $title.addEventListener('.click', () => {
-// 	console.log(12)
-// })
+	$menu.classList.toggle('menu--active');// появление меню
+});
+
+
 
 
 

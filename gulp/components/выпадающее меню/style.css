@@ -1,3 +1,13 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -6,6 +16,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .menu--active {
@@ -69,7 +84,8 @@
   height: auto;
 }
 
-.title {
+.catalog {
+  padding: 10px;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
