@@ -1,34 +1,53 @@
+@mixin hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@mixin hide-transition {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s, visibility 0.4s linear;
+}
+
+@mixin show {
+	opacity: 1;
+	visibility: visible;
+}
 
 @mixin bg-cover {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 @mixin flex {
-  display: flex;
+	display: flex;
+}
+
+@mixin inline-flex {
+	display: inline-flex;
 }
 
 @mixin flex-h-center {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 @mixin flex-v-center {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 @mixin flex-all-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @mixin flex-center-sb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 @mixin flex-start-sb {
@@ -74,13 +93,13 @@
 	justify-content: center;
 }
 
-@mixin large-screen{
+@mixin large-screen {
 	@media (max-width: (1640px)) {
 		@content;
 	}
 }
 
-@mixin laptop-max{
+@mixin laptop-max {
 	@media (max-width: (1440px)) {
 		@content;
 	}

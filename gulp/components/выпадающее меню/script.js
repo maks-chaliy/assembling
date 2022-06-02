@@ -1,57 +1,53 @@
-const $catalog = document.querySelector('.catalog');
-const $menu = document.querySelector('.menu');
+const $navBtn = document.querySelector('.nav-btn');
+const $nav = document.querySelector('.nav');
 
-$catalog.addEventListener('click', () => {
+$navBtn.addEventListener('click', () => {
 
-	$menu.classList.toggle('menu--active');// появление меню
+	$nav.classList.toggle('nav--active');// появление меню
 });
 
 
 
+const $navHeading = document.querySelectorAll('.nav__heading'),
+	$drop = document.querySelectorAll('.drop');
 
-
-
-
-const $menuBtn = document.querySelectorAll('.menu__btn'),
-	$dropdown = document.querySelectorAll('.dropdown');
-
-$menuBtn.forEach(el => {
+$navHeading.forEach(el => {
 	el.addEventListener('click', (e) => {
 		//текущий элемент,та кнопка на которую нажали
 		let currentBtn = e.currentTarget;
-		//через родителя currentBtn ('.menu__item') добираемся до выпадающего текущего списка ('.dropdown')
-		let dropdown = currentBtn.closest('.menu__item').querySelector('.dropdown');
+		//через родителя currentBtn ('.nav__item') добираемся до выпадающего текущего списка ('.drop)
+		let dropdown = currentBtn.closest('.nav__item').querySelector('.drop');
 
-		$menuBtn.forEach(el => {
+		$navHeading.forEach(el => {
 			//если этот элемент != currentBtn
 			//если мы при клике не находимся на текущей кнопки то у всех оставшихся удаляем класс
 			if (el != currentBtn) {
-				el.classList.remove('menu__btn--active');
+				el.classList.remove('nav__heading--active');
 			}
 		});
 
 		//при клике на другую кнопку меню у другой кнопкт закрывается
-		$dropdown.forEach(el => {
+		$drop.forEach(el => {
 			if (el != dropdown) {
-				el.classList.remove('dropdown--active');
+				el.classList.remove('drop--active');
 			}
 		});
 
-		currentBtn.classList.toggle('menu__btn--active');//добавляется новый класс для кнопки но не сбрасывается у соседей
-		dropdown.classList.toggle('dropdown--active');
+		currentBtn.classList.toggle('nav__heading--active');//добавляется новый класс для кнопки но не сбрасывается у соседей
+		dropdown.classList.toggle('drop--active');
 
 	});
 
 	document.addEventListener('click', (e) => {
 		//если target != потомкам menu
-		if (!e.target.closest('.menu')) {
-			$menuBtn.forEach(el => {
-				el.classList.remove('menu__btn--active');
+		if (!e.target.closest('.nav')) {
+			$navHeading.forEach(el => {
+				el.classList.remove('nav__heading--active');
 			});
 
-			$dropdown.forEach(el => {
-				el.classList.remove('dropdown--active');
+			$drop.forEach(el => {
+				el.classList.remove('drop--active');
 			});
 		}
 	})
-})
+});

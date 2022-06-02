@@ -9,6 +9,7 @@ body {
 }
 
 html {
+	//для плавной прокрутки scrollTop
 	scroll-behavior: smooth;
 }
 
@@ -45,6 +46,7 @@ img {
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 input,

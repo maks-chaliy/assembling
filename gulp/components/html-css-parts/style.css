@@ -1,0 +1,11 @@
+.elem {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.elem::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/*# sourceMappingURL=style.css.map */

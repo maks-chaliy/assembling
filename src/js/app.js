@@ -11,6 +11,7 @@ flsFunctions.isWebp();
 
 //=============/=============/=============/=============/=============
 //========== FILES ==========
+//import '../js/files/scrollTop.js';
 //import '../js/files/anchors.js';
 // import '../js/files/burger.js';
 // import '../js/files/modals.js';
