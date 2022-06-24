@@ -37,4 +37,3 @@ const toggleItem = (item) =>{
         item.classList.add('dropdown--active')
     }
 }
-
