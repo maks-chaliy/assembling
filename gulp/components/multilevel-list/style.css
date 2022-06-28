@@ -23,8 +23,14 @@ body {
   padding: 0;
 }
 
+.nav {
+  width: 600px;
+}
+
 .nav__list {
-  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #b5c1c0;
 }
 
@@ -42,8 +48,8 @@ body {
 .dropdown-list {
   display: none;
   position: absolute;
-  right: -150px;
-  top: 0;
+  left: 0;
+  top: 18px;
   width: 150px;
   background-color: #92a3a2;
 }
@@ -54,5 +60,10 @@ body {
 
 span.dropdown-list--active-span {
   background-color: #4f6a6a;
+}
+
+.dropdown-list .dropdown-list {
+  top: 0;
+  left: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+body {
+	background-color: #bedfe8;
+}
+
+.accordion {
+	display: flex;
+
+	&__item {
+		width: 200px;
+		position: relative;
+		margin: 10px 20px;
+	}
+
+	&__title {
+		position: relative;
+		padding: 10px;
+		background-color: #2694af;
+		color: #fff;
+		cursor: pointer;
+
+		&::before {
+			content: "+";
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			font-size: 20px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 2;
+		background-color: #fff;
+		height: 0;
+		overflow: hidden;
+		transition: 0.5s;
+	}
+}
+
+.accordion__item--active {
+	.accordion__content {
+		height: 250px;
+	}
+
+	.accordion__title::before {
+		content: "-";
+		font-size: 28px;
+	}
+}
+
+//=============/=============/=============
